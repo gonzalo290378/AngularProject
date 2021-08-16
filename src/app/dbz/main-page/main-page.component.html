@@ -1,0 +1,24 @@
+<h1>Dragon ball z</h1>
+<hr />
+<div class="row">
+  <div class="col">
+    <!-- El [personajes] se refiere al array que se encuentra en personajes.component.ts
+        y el "personajes" es el array que se encuentra en main-page.componenent.ts 
+        [personajes] = "personajes"-->
+    <app-personajes 
+        
+        >
+    </app-personajes>
+  </div>
+
+  <div class="col">
+    <app-agregar
+        [nuevo] = "nuevo"
+        >
+    </app-agregar>
+    <!-- (onNuevoPersonaje) = "agregarNuevoPersonaje( $event )" -->
+  </div>
+</div>
+
+<!-- [] me quiere decir que recibo informacion y () me quiere decir que al recibir un evento, como el click o el (onNuevoPersonaje) disparo:  
+el siguiente metodo agregarNuevoPersonaje($event)-->
